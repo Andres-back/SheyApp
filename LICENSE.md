@@ -14,17 +14,17 @@
 
 ### Propiedad Intelectual
 
-Este software y toda su documentación asociada ("AppShey") son propiedad exclusiva de INDERCULTURA y han sido desarrollados específicamente para uso interno de la organización.
+Este software y toda su documentación asociada ("AppShey") son propiedad exclusiva de Sheyner Correa Jaramillo - Trabajadora Social y han sido desarrollados específicamente para uso interno de la Dueña.
 
 ### Derechos Reservados
 
-Copyright © 2026 INDERCULTURA. Todos los derechos reservados.
+Copyright © 2026 Sheyner Correa Jaramillo - Trabajadora Social. Todos los derechos reservados.
 
 ### Uso Autorizado
 
 Esta aplicación está licenciada exclusivamente para:
 
-✅ **Uso Interno**: Personal autorizado de INDERCULTURA  
+✅ **Uso Interno**: Personal autorizado de Sheyner Correa Jaramillo - Trabajadora Social  
 ✅ **Propósito Específico**: Control de asistencia de menores  
 ✅ **Usuario Designado**: Sheynner Correa Jaramillo y personal autorizado  
 
