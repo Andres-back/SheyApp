@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Nino" representedClassName="Nino" syncable="YES">
+        <attribute name="activo" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="documento" attributeType="String"/>
+        <attribute name="fechaRegistro" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="formadorACargo" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nombreCompleto" attributeType="String"/>
+        <attribute name="sector" attributeType="String"/>
+        <relationship name="asistencias" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Asistencia" inverseName="nino" inverseEntity="Asistencia"/>
+        <relationship name="padres" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Padre" inverseName="nino" inverseEntity="Padre"/>
+    </entity>
+    <entity name="Padre" representedClassName="Padre" syncable="YES">
+        <attribute name="documento" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="nombreCompleto" attributeType="String"/>
+        <attribute name="parentesco" attributeType="String"/>
+        <attribute name="telefono" attributeType="String"/>
+        <relationship name="nino" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Nino" inverseName="padres" inverseEntity="Nino"/>
+    </entity>
+    <entity name="Asistencia" representedClassName="Asistencia" syncable="YES">
+        <attribute name="entidades" attributeType="String"/>
+        <attribute name="fecha" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="firmaNino" optional="YES" attributeType="Binary"/>
+        <attribute name="firmaPadre" optional="YES" attributeType="Binary"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="observaciones" optional="YES" attributeType="String"/>
+        <attribute name="presente" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="sector" attributeType="String"/>
+        <attribute name="semana" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tema" attributeType="String"/>
+        <relationship name="nino" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Nino" inverseName="asistencias" inverseEntity="Nino"/>
+    </entity>
+</model>
